@@ -22,9 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity 
-            android:name="com.hackathon.MainActivity">
-        </activity>
+        <activity android:name="com.hackathon.MainActivity"></activity>
+        <activity android:name="com.hackathon.QuantityChoiceActivity"></activity>
+        <activity android:name="com.hackathon.PriceChoiceActivity"></activity>
     </application>
 
 </manifest>

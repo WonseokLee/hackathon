@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="4" >
+    
+    <ImageButton
+        android:id="@+id/price_choice_imgbtn1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/priceimgbtn1"
+        android:layout_weight="1"/>
+    
+     <ImageButton
+        android:id="@+id/price_choice_imgbtn2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/priceimgbtn1"
+        android:layout_weight="1"/>
+     
+      <ImageButton
+        android:id="@+id/price_choice_imgbtn3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/priceimgbtn1"
+        android:layout_weight="1"/>
+      
+      <ImageButton
+        android:id="@+id/price_choice_imgbtn4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/priceimgbtn1"
+        android:layout_weight="1"/>
+ 
+    
+
+</LinearLayout>
