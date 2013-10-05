@@ -9,22 +9,31 @@ public class Food {
 	private String _place;
 	private String _phone_number;
 	private Time _time1;
-	private String _time;
+	private String _stime;
+	private String _etime;
+	private String _s1time;
+	private String _e1time;
 	private String _quantity;
 	private String _explanation;
 	private String _image;
+	private String _size;
 	
 	public Food(int id, String name, int price, String place, String phone_number,
-			String time, String quantity, String explanation, String image){
+			String stime, String etime, String s1time, String e1time, String quantity, 
+			String explanation, String image, String size){
 		this._id = id;
 		this._name = name;
 		this._price = price;
 		this._place = place;
 		this._phone_number = phone_number;
-		this._time = time;
+		this._stime = stime;
+		this._etime = etime;
+		this._s1time = s1time;
+		this._e1time = e1time;
 		this._quantity = quantity;
 		this._explanation = explanation;
 		this._image = image;
+		this._size = size;
 	}
 	
 	public String getName(){
@@ -47,8 +56,20 @@ public class Food {
 		return this._time1;
 	}
 	
-	public String getTime(){
-		return this._time;
+	public String getSTime(){
+		return this._stime;
+	}
+	
+	public String getETime(){
+		return this._etime;
+	}
+	
+	public String getS1Time(){
+		return this._s1time;
+	}
+	
+	public String getE1Time(){
+		return this._e1time;
 	}
 	
 	public String getQuantity(){
@@ -61,6 +82,10 @@ public class Food {
 	
 	public String getImage(){
 		return this._image;
+	}
+	
+	public String getSize(){
+		return this._size;
 	}
 	
 	public void setName(String name){

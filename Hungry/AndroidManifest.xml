@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -26,6 +27,7 @@
         <activity android:name="com.hackathon.QuantityChoiceActivity"></activity>
         <activity android:name="com.hackathon.PriceChoiceActivity"></activity>
         <activity android:name="com.hackathon.MenuActivity"></activity>
+        <activity android:name="com.hackathon.WholeViewActivity"></activity>
     </application>
 
 </manifest>

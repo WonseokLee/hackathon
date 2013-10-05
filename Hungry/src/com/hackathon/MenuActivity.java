@@ -3,6 +3,7 @@ package com.hackathon;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -55,7 +56,7 @@ public class MenuActivity extends FragmentActivity implements OnClickListener{
         ViewPager pager = (ViewPager)findViewById(R.id.menu_ViewPager);
         pager.setAdapter(pagerAdapter);
         
-        
+        wholeViewBtn.setOnClickListener(this);
     }
 	
 	private List<Fragment> getFragments(){
@@ -74,6 +75,12 @@ public class MenuActivity extends FragmentActivity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
+		switch(v.getId()){
+		case R.id.menu_wholeViewButton:
+			Intent wholeViewIntent = new Intent(MenuActivity.this, WholeViewActivity.class);
+			startActivity(wholeViewIntent);
+			break;
+		}
 		
 	}
 

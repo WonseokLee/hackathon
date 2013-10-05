@@ -18,6 +18,7 @@ public class PriceChoiceActivity extends Activity implements OnClickListener{
 	ImageButton imgbtn1;
 	ImageButton imgbtn2;
 	ImageButton imgbtn3;
+	ImageButton imgbtn4;
 	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +31,12 @@ public class PriceChoiceActivity extends Activity implements OnClickListener{
         imgbtn1 = (ImageButton) findViewById(R.id.price_choice_imgbtn1);
         imgbtn2 = (ImageButton) findViewById(R.id.price_choice_imgbtn2);
         imgbtn3 = (ImageButton) findViewById(R.id.price_choice_imgbtn3);
+        imgbtn4 = (ImageButton) findViewById(R.id.price_choice_imgbtn4);
         
         imgbtn1.setOnClickListener(this);
         imgbtn2.setOnClickListener(this);
         imgbtn3.setOnClickListener(this);
+        imgbtn4.setOnClickListener(this);
     }
 
 	@Override

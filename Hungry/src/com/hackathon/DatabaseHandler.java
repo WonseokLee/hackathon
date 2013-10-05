@@ -21,10 +21,14 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 	private static final String KEY_PRICE = "price";
 	private static final String KEY_PLACE = "place";
 	private static final String KEY_PHONENUMBER = "phone_number";
-	private static final String KEY_TIME = "time";
+	private static final String KEY_STIME = "stime";
+	private static final String KEY_ETIME = "etime";
+	private static final String KEY_S1TIME = "s1time";
+	private static final String KEY_E1TIME = "e1time";
 	private static final String KEY_QUANTITY = "quantity";
 	private static final String KEY_EXPLANATION = "explanation";
 	private static final String KEY_IMAGE = "image";
+	private static final String KEY_SIZE = "size";
 
 	public DatabaseHandler(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -40,10 +44,14 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 				+ KEY_PRICE + " INTEGER"
 				+ KEY_PLACE + " TEXT,"
 				+ KEY_PHONENUMBER + " TEXT,"
-				+ KEY_TIME + " TEXT,"
+				+ KEY_STIME + " TEXT,"
+				+ KEY_ETIME + " TEXT,"
+				+ KEY_S1TIME + " TEXT,"
+				+ KEY_E1TIME + " TEXT,"
 				+ KEY_QUANTITY + " TEXT,"
 				+ KEY_EXPLANATION + " TEXT,"
 				+ KEY_IMAGE + " TEXT,"
+				+ KEY_SIZE + " TEXT"
 				+ ")";
 		db.execSQL(CREATE_FOODS_TABLE);
 		
@@ -53,7 +61,6 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// TODO Auto-generated method stub
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_FOODS);
-		
 		onCreate(db);
 		
 	}
@@ -74,7 +81,8 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 		
 		Cursor cursor = db.query(TABLE_FOODS, 
 				new String[]{KEY_ID, KEY_NAME, KEY_PRICE, KEY_PLACE, KEY_PHONENUMBER,
-				KEY_TIME, KEY_QUANTITY, KEY_EXPLANATION, KEY_IMAGE}, 
+				KEY_STIME, KEY_ETIME, KEY_S1TIME, KEY_E1TIME, KEY_QUANTITY, 
+				KEY_EXPLANATION, KEY_IMAGE, KEY_SIZE}, 
 				KEY_ID+"=?", new String[]{String.valueOf(id)},null,null,null,null);
 		if(cursor != null)
 			cursor.moveToFirst();
@@ -86,7 +94,11 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 				cursor.getString(5),
 				cursor.getString(6),
 				cursor.getString(7),
-				cursor.getString(8));
+				cursor.getString(8),
+				cursor.getString(9),
+				cursor.getString(10),
+				cursor.getString(11),
+				cursor.getString(12));
 		
 		return food;
 	}
@@ -108,7 +120,11 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 						cursor.getString(5),
 						cursor.getString(6),
 						cursor.getString(7),
-						cursor.getString(8));
+						cursor.getString(8),
+						cursor.getString(9),
+						cursor.getString(10),
+						cursor.getString(11),
+						cursor.getString(12));
 			}while(cursor.moveToNext());
 		}
 		
