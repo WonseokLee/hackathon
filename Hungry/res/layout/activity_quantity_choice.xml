@@ -2,33 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/quantity_choice_background"
     android:orientation="vertical"
-    android:weightSum="3" >
+    android:weightSum="4" >
     
     <ImageButton
         android:id="@+id/quantity_choice_imgbtn1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@android:color/transparent"
-        android:src="@drawable/quantityimgbtn1"
-        android:layout_weight="1"/>
+        android:src="@drawable/selector_quantity_choice_imgbtn1"
+        android:layout_weight="1.2"/>
     
      <ImageButton
         android:id="@+id/quantity_choice_imgbtn2"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@android:color/transparent"
-        android:src="@drawable/quantityimgbtn1"
-        android:layout_weight="1"/>
+        android:src="@drawable/selector_quantity_choice_imgbtn2"
+        android:layout_weight="1.6"/>
      
       <ImageButton
         android:id="@+id/quantity_choice_imgbtn3"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@android:color/transparent"
-        android:src="@drawable/quantityimgbtn1"
-        android:layout_weight="1"/>
+        android:src="@drawable/selector_quantity_choice_imgbtn3"
+        android:layout_weight="1.2"/>
  
     
 

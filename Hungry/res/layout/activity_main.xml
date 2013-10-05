@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/main_background"
     tools:context=".MainActivity" >
 
     <ImageButton
@@ -13,8 +13,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="161dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/imgbtn1" />
-"
+        android:src="@drawable/selector_main_image_btn1" />
+
 
 
 </RelativeLayout>

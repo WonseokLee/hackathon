@@ -1,6 +1,7 @@
 package com.hackathon;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
@@ -56,6 +57,9 @@ public class PriceChoiceActivity extends Activity implements OnClickListener{
 		editor.putInt(SP_PRICE, price);
 		editor.commit();
 		
+		Intent menuIntent = new Intent(PriceChoiceActivity.this,
+				MenuActivity.class);
+		startActivity(menuIntent);
 		
 	}
 

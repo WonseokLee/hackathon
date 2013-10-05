@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/menu_RL1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+        	<ImageButton 
+           		android:id="@+id/menu_wholeViewButton"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+            	android:layout_alignParentTop="true"
+            	android:src="@drawable/building2"/>
+
+        	<ImageButton
+        	    android:id="@+id/menu_refreshButton"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_alignParentTop="true"
+        	    android:layout_alignRight="@id/menu_wholeViewButton"
+        	    android:src="@drawable/building2" />
+
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/menu_LL1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    	<android.support.v4.view.ViewPager
+        	android:id="@+id/menu_ViewPager"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+    	</android.support.v4.view.ViewPager>
+    </LinearLayout>
+    
+    <LinearLayout  
+        android:id="@+id/menu_LL2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="HelloWorld"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="HelloWorld"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="HelloWorld"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    
+
+</LinearLayout>
