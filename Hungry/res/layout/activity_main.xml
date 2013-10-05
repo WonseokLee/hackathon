@@ -15,6 +15,14 @@
         android:background="@android:color/transparent"
         android:src="@drawable/selector_main_image_btn1" />
 
-
+	<ImageButton
+	    android:id="@+id/main_image_btn2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/main_image_btn1"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="80dp"
+	    android:background="@android:color/transparent"
+	    android:src="@drawable/selector_main_image_btn2" />
 
 </RelativeLayout>
