@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper{
-	
+	/* This will be the Change*/
 	private static final int DATABASE_VERSION = 1;
 	private static final String DATABASE_NAME = "FoodManager";
 	
