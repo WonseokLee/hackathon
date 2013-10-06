@@ -5,7 +5,7 @@ import android.text.format.Time;
 public class Food {
 	private int _id;
 	private String _name;
-	private int _price;
+	private String _price;
 	private String _place;
 	private String _phone_number;
 	private Time _time1;
@@ -18,7 +18,7 @@ public class Food {
 	private String _image;
 	private String _size;
 	
-	public Food(int id, String name, int price, String place, String phone_number,
+	public Food(int id, String name, String price, String place, String phone_number,
 			String stime, String etime, String s1time, String e1time, String quantity, 
 			String explanation, String image, String size){
 		this._id = id;
@@ -40,7 +40,7 @@ public class Food {
 		return this._name;
 	}
 	
-	public int getPrice(){
+	public String getPrice(){
 		return this._price;
 	}
 	
@@ -92,7 +92,7 @@ public class Food {
 		this._name = name;
 	}
 	
-	public void setPrice(int price){
+	public void setPrice(String price){
 		this._price = price;
 	}
 	

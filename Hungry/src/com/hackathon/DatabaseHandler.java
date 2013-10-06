@@ -41,7 +41,7 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 		String CREATE_FOODS_TABLE = "CREATE TABLE "+ TABLE_FOODS + "("
 				+ KEY_ID + " INTEGER PRIMARY KEY," 
 				+ KEY_NAME + " TEXT NOT NULL,"
-				+ KEY_PRICE + " INTEGER"
+				+ KEY_PRICE + " TEXT"
 				+ KEY_PLACE + " TEXT,"
 				+ KEY_PHONENUMBER + " TEXT,"
 				+ KEY_STIME + " TEXT,"
@@ -88,7 +88,7 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 			cursor.moveToFirst();
 		Food food = new Food(Integer.parseInt(cursor.getString(0)),
 				cursor.getString(1),
-				Integer.parseInt(cursor.getString(2)),
+				cursor.getString(2),
 				cursor.getString(3),
 				cursor.getString(4),
 				cursor.getString(5),
@@ -114,7 +114,7 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 			do{
 				Food food = new Food(Integer.parseInt(cursor.getString(0)),
 						cursor.getString(1),
-						Integer.parseInt(cursor.getString(2)),
+						cursor.getString(2),
 						cursor.getString(3),
 						cursor.getString(4),
 						cursor.getString(5),

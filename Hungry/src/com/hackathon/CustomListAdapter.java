@@ -48,9 +48,11 @@ public class CustomListAdapter extends BaseAdapter{
 		
 		TextView listTitle = (TextView) rowView.findViewById(R.id.list_title);
 		TextView listArtist = (TextView) rowView.findViewById(R.id.list_artist);
+		TextView listPhone = (TextView) rowView.findViewById(R.id.list_duration);
 		
 		listTitle.setText(foods.get(position).getName());
 		listArtist.setText(foods.get(position).getPhoneNumber());
+		listPhone.setText(foods.get(position).getPrice());
 		
 		return rowView;
 	}

@@ -45,22 +45,81 @@
         android:id="@+id/menu_LL2"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:background="@drawable/menu_background"
+        android:layout_margin = "20dip"
         android:orientation="vertical">
-        <TextView
+        <LinearLayout
+            android:id="@+id/menu_LL3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="HelloWorld"
-            android:textSize="25sp"/>
-        <TextView
+            android:orientation="horizontal">
+           	<TextView
+        		android:id="@+id/menu_name"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Rihanna Love the way lie"
+        		android:textColor="#040404"
+        		android:typeface="sans"
+        		android:textSize="20dip"
+        		android:textStyle="bold"/>
+           	<TextView
+        		android:id="@+id/menu_price"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Rihanna Love the way lie"
+        		android:textColor="#040404"
+        		android:typeface="sans"
+        		android:textSize="20dip"
+        		android:textStyle="bold"/>
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/menu_LL4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="HelloWorld"
-            android:textSize="25sp"/>
-        <TextView
+            android:orientation="horizontal">
+           	<TextView
+        		android:id="@+id/menu_place"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Rihanna Love the way lie"
+        		android:textColor="#040404"
+        		android:typeface="sans"
+        		android:textSize="20dip"
+        		android:textStyle="bold"/>
+           	<TextView
+        		android:id="@+id/menu_phone_number"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Rihanna Love the way lie"
+        		android:textColor="#040404"
+        		android:typeface="sans"
+        		android:textSize="20dip"
+        		android:textStyle="bold"/>
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/menu_LL5"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="HelloWorld"
-            android:textSize="25sp"/>
+            android:orientation="horizontal">
+           	<TextView
+        		android:id="@+id/menu_what_time"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="영업 시간 : "
+        		android:textColor="#040404"
+        		android:typeface="sans"
+        		android:textSize="20dip"
+        		android:textStyle="bold"/>
+           	<TextView
+        		android:id="@+id/menu_time"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Rihanna Love the way lie"
+        		android:textColor="#040404"
+        		android:typeface="sans"
+        		android:textSize="20dip"
+        		android:textStyle="bold"/>
+        </LinearLayout>
     </LinearLayout>
     
 

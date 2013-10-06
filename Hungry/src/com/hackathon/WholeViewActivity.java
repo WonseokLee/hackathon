@@ -22,7 +22,7 @@ public class WholeViewActivity extends Activity{
 	private static final String KEY_NAME = "name";
 	private static final String KEY_PRICE = "price";
 	private static final String KEY_PLACE = "place";
-	private static final String KEY_PHONENUMBER = "phone_number";
+	private static final String KEY_PHONENUMBER = "phone";
 	private static final String KEY_STIME = "stime";
 	private static final String KEY_ETIME = "etime";
 	private static final String KEY_S1TIME = "s1time";
@@ -62,7 +62,7 @@ public class WholeViewActivity extends Activity{
 		 }
 	
 	@TargetApi(Build.VERSION_CODES.GINGERBREAD)
-	private ArrayList<Food> getFoods(){
+	public ArrayList<Food> getFoods(){
 		Log.i("Hello","Hello");
 		StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitNetwork().build());
 		ArrayList<Food> foods = new ArrayList<Food>();
@@ -86,6 +86,7 @@ public class WholeViewActivity extends Activity{
 			XmlPullParserFactory factory = XmlPullParserFactory.newInstance(); 
 			factory.setNamespaceAware(true); 
 			XmlPullParser xpp = factory.newPullParser(); 
+			InputStream stream1 = getInputStream("http://rgy.wo.tc/xmparse.php");
 			InputStream stream = getInputStream("http://rgy.wo.tc/connection/data/client.xml");
 			xpp.setInput(stream, "euc-kr"); 
 			Log.i("works","works");
@@ -147,7 +148,7 @@ public class WholeViewActivity extends Activity{
 			    	tagName=xpp.getName();
 	                   
                     if(tagName.equals("item")){
-                    	 Food food = new Food(0, name, 0,
+                    	 Food food = new Food(0, name, price,
                     			 //Integer.parseInt(price), 
                     			 place, phone_number, stime, etime, s1time, e1time, 
 					    		  quantity, explanation, image, size);
