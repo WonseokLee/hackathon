@@ -5,11 +5,11 @@
     android:orientation="vertical" >
     
     <ImageView 
-        android:id="@+id/menu_Image"
+        android:id="@+id/menu_imgView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:src="@drawable/default_image"
-        android:layout_gravity="center"/>"
+        android:layout_gravity="center"/>
     
 
 </LinearLayout>

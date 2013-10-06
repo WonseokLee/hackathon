@@ -56,5 +56,7 @@ public class CustomListAdapter extends BaseAdapter{
 		
 		return rowView;
 	}
+	
+	
 
 }
