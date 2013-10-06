@@ -73,13 +73,13 @@ public class MainActivity extends Activity implements OnClickListener {
 			startActivity(eatIntent);
 			break;
 		case R.id.main_image_btn2:
-			connectDB();
 			break;
 		}
 	}
 	
 	@TargetApi(Build.VERSION_CODES.GINGERBREAD)
 	private void connectDB(){
+		
 		StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitNetwork().build());
 		try {
 			

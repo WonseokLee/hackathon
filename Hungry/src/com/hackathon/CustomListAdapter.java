@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class CustomListAdapter extends BaseAdapter{
 	private Context context;
-	private ArrayList<Food> foods;
+	private ArrayList<Food> foods = null;
 
 	public CustomListAdapter(Context context, ArrayList<Food> foods){
 		super();
@@ -21,7 +21,10 @@ public class CustomListAdapter extends BaseAdapter{
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return foods.size();
+		if(foods == null)
+			return 0;
+		else
+			return foods.size();
 	}
 
 	@Override

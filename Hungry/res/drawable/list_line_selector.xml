@@ -3,13 +3,13 @@
     	<item
     	    android:state_selected="false"
     	    	android:state_pressed="false"
-    	    	android:drawable="@drawable/list_gradient_background" />
+    	    	android:drawable="@drawable/list_row_background" />
     	
     	<item android:state_pressed="true"
-    	    android:drawable="@drawable/list_gradient_background_hover" />
+    	    android:drawable="@drawable/list_title_row_background" />
     	
     	<item android:state_selected="true"
     	    android:state_pressed="false"
-    	    android:drawable="@drawable/list_gradient_background_hover" />
+    	    android:drawable="@drawable/list_title_row_background" />
 
 </selector>
